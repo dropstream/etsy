@@ -13,7 +13,9 @@ module Etsy
     include Etsy::Model
 
     attribute :id, :from => :user_id
-    attribute :username, :from => :login_name
+    
+    #https://groups.google.com/g/etsy-api-v2/c/FwBtSxj8y8I?pli=1
+    attribute :username, :from => :user_id
     attribute :email, :from => :primary_email
     attribute :created, :from => :creation_tsz
 
